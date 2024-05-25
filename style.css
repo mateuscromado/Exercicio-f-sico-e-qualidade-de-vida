@@ -23,3 +23,53 @@ body{
     height: 80vh;
     background-color:black ;
 }
+
+.oqueexercicio{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 90vh;
+    position: absolute;
+    gap: 20px;
+    min-height: 65vh;
+
+}
+.oqueexercicio >div{
+width: 35%;
+
+}
+
+.oqueexercicio img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.exercicio{
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    height: 60%;
+    padding: 30px;
+}
+@media (max-width:1300px) and (min-width:1000px) {
+    .oqueexercicio >div{
+        width: 60%;
+    
+    }
+    .oqueexercicio img{
+        border-radius: 0 10px 10px 0;
+    }
+}
+@media (max-width:1000px) {
+    .oqueexercicio{
+        display: block;
+
+    }
+    .oqueexercicio > div{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
