@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media (max-width:1300px) and (min-width:1000px) {
+    .oqueexercicio >div{
+        width: 60%;
+    
+    }
+    .oqueexercicio img{
+        border-radius: 0 10px 10px 0;
+    }
+}
+@media (max-width:1000px) {
+    .oqueexercicio{
+        display: block;
+
+    }
+    .oqueexercicio > div{
+        margin: 0 auto;
+        width: 80%;
+    }
+}

@@ -74,3 +74,6 @@ width: 35%;
     }
 }
 
+nav > div > button > span {
+    filter: invert(1);
+}
