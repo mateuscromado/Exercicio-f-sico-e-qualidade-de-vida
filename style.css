@@ -193,6 +193,8 @@ Começo da calculadora de MT
     margin: 10px;
     border-radius: 100px;
     border: gray 2px solid;
+    padding: 0 20px;
+    text-align: center;
 }
 .display input::placeholder{
     text-align: center;
@@ -239,4 +241,32 @@ Começo da calculadora de MT
     color:black;
 }
 
+
+@media (max-width:900px)  {
+    .display{
+        width: 90%;
+
+    }
+}
+
+
+@media (max-width:600px)  {
+
+    .display{
+        padding: 5px ;
+    }
+
+    .display input, .display button{
+        width: 80%;
+    }
+
+    .box-s{
+        gap: 0px;
+        flex-direction: column;
+    }
+    .box-s h3{
+        margin: 0;
+    }
+
+}
 
