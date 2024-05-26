@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,15 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+
+  <!--Importando as fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -24,10 +33,10 @@
       <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center;">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="exercicio.html">Exercício</a>
+            <a class="nav-link active" aria-current="page" href="#">Exercício</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Bem-Estar</a>
@@ -44,26 +53,137 @@
     <div>
 
     </div>
+  </section>
 
-    <section class="oqueexercicio">
-      <div class="imagem">
-        <img src="imagens/pessoas correndo exercicio físico.jpg" alt="">
-      </div>
+  <section class="oqueexercicio">
+    <div class="imagem">
+      <img src="imagens/pessoas correndo exercicio físico.jpg" alt="">
+    </div>
 
-      <div class="exercicio">
-       
-          <h1>O que é o exercício físico</h1>
-         
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti enim recusandae suscipit, odit sed
-          veritatis praesentium illo provident quod adipisci incidunt, non nemo alias ad labore quis modi inventore
-          delectus accusamus. Voluptate fuga deserunt necessitatibus quod. Officia, quo saepe enim at repellendus fugit
-          optio tempora eligendi quas et. Quidem.
-        </p>
-      </div>
-    </section>
+    <div class="exercicio">
+
+      <h1>O que é o exercício físico</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti enim recusandae suscipit, odit sed
+        veritatis praesentium illo provident quod adipisci incidunt, non nemo alias ad labore quis modi inventore
+        delectus accusamus. Voluptate fuga deserunt necessitatibus quod. Officia, quo saepe enim at repellendus fugit
+        optio tempora eligendi quas et. Quidem.
+      </p>
+    </div>
+  </section>
+
+  <section class="imcmt">
+    <h1>METABOLISMO BASAL E ÍNDICE DE MASSA CORPORAL</h1>
+
+    <div class="subtopico">
+      <h3>Metabolimo basal (MT)</h3>
+
+      <p>
+        Metabolismo basal é a quantidade mínima de energia que o corpo necessita para realizar suas funções vitais em
+        repouso, como respirar, manter a temperatura corporal, e assegurar o funcionamento dos órgãos. Essa taxa de
+        gasto energético é essencial para a manutenção das funções básicas do organismo e varia de acordo com fatores
+        como idade, sexo, peso, altura e composição corporal. Em outras palavras, o metabolismo basal representa a
+        quantidade de calorias que uma pessoa queima enquanto está em completo repouso, sem realizar qualquer atividade
+        física.
+      </p>
+    </div>
+
+
+    <div class="subtopico">
+      <h3>Índice de Massa Corporal (IMC)</h3>
+
+      <p>
+        O Índice de Massa Corporal (IMC) é uma medida usada para avaliar se uma pessoa tem um peso saudável em relação à
+        sua altura. Ele é calculado dividindo o peso da pessoa em quilogramas pelo quadrado de sua altura em metros (IMC
+        = peso / altura²). O IMC é utilizado para categorizar o indivíduo em diferentes faixas de peso, como abaixo do
+        peso, peso normal, sobrepeso e obesidade, ajudando a identificar possíveis riscos à saúde relacionados ao peso
+        corporal.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="display">
+    <h1>Calcular MT e IMC</h1>
+
+    <input type="text" id="altura" name="" placeholder="Altura" title="Insira sua altura" id="pesoInput">
+    <br>
+    <input type="text" id="peso" name="" placeholder="Peso" title="Insira seu peso" id="alturaInput">
+    <br>
+    <br>
+    <h2>texto</h2>
+
+    <div class="box-s">
+
+
+      <h3 id="fem">Feminino</h3>
+      <h3 id="mas">Masculino</h3>
+
+
+
+    </div>
+    <br>
+    <br>
+    <button type="submit" id="start">Calcular </button>
 
   </section>
+
+  <section class="resultado">
+    <h1>Metabolimo basal</h1>
+
+    <div>
+      <h1>1968 cal</h1>
+      <h3>Superávit calórico</h3>
+    </div>
+    <p>Você está em um processo de superávit calórico
+      onde você consome mais calorias do que você gasta.</p>
+  </section>
+
+  <section class="resultado">
+    <h1>Índice de Massa Corporal </h1>
+
+    <div>
+      <h1>27,6</h1>
+      <h3>Sobrepeso</h3>
+    </div>
+    <p>Pode estar associado a um maior risco de desenvolver doenças como diabetes tipo 2, hipertensão e doenças
+      cardíacas.</p>
+  </section>
+
+  <section class="recomendacoes">
+    <div class="titulo">
+      <h1>RECOMENDAÇÕES</h1>
+    </div>
+
+    <div class="rec" id="rec1">
+      <h2>Adotar hábitos alimentares saudáveis</h2>
+      <p>
+        Reduza a ingestão de alimentos processados, açúcares e gorduras saturadas.
+      </p>
+    </div>
+
+    <div class="rec" id="rec2">
+      <h2>Adotar hábitos alimentares saudáveis</h2>
+      <p>
+        Reduza a ingestão de alimentos processados, açúcares e gorduras saturadas.
+      </p>
+    </div>
+
+    <div class="rec" id="rec3">
+      <h2>Adotar hábitos alimentares saudáveis</h2>
+      <p>
+        Reduza a ingestão de alimentos processados, açúcares e gorduras saturadas.
+      </p>
+    </div>
+
+
+  </section>
+
+
+
+
+
 
 
 
