@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MetaPro | Homepage</title>
+  <title>Homepage</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -33,10 +33,10 @@
       <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center;">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="exercicio.html  ">Exercício</a>
+            <a class="nav-link active" aria-current="page" href="#">Exercício</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Bem-Estar</a>
@@ -107,9 +107,9 @@
   <section class="display">
     <h1>Calcular MT e IMC</h1>
 
-    <input type="text" id="altura" name="" placeholder="Altura" title="Insira sua altura" id="pesoInput">
+    <input type="number" id="altura" name="" placeholder="Altura" title="Insira sua altura" id="pesoInput">
     <br>
-    <input type="text" id="peso" name="" placeholder="Peso" title="Insira seu peso" id="alturaInput">
+    <input type="number" id="peso" name="" placeholder="Peso" title="Insira seu peso" id="alturaInput">
     <br>
     <br>
     <h2>texto</h2>
@@ -125,60 +125,10 @@
     </div>
     <br>
     <br>
-    <button type="submit" id="start">Calcular </button>
+    <button type="submit" id="start" >Calcular </button>
 
   </section>
 
-  <section class="resultado">
-    <h1>Metabolimo basal</h1>
-
-    <div>
-      <h1>1968 cal</h1>
-      <h3>Superávit calórico</h3>
-    </div>
-    <p>Você está em um processo de superávit calórico
-      onde você consome mais calorias do que você gasta.</p>
-  </section>
-
-  <section class="resultado">
-    <h1>Índice de Massa Corporal </h1>
-
-    <div>
-      <h1>27,6</h1>
-      <h3>Sobrepeso</h3>
-    </div>
-    <p>Pode estar associado a um maior risco de desenvolver doenças como diabetes tipo 2, hipertensão e doenças
-      cardíacas.</p>
-  </section>
-
-  <section class="recomendacoes">
-    <div class="titulo">
-      <h1>RECOMENDAÇÕES</h1>
-    </div>
-
-    <div class="rec" id="rec1">
-      <h2>Adotar hábitos alimentares saudáveis</h2>
-      <p>
-        Reduza a ingestão de alimentos processados, açúcares e gorduras saturadas.
-      </p>
-    </div>
-
-    <div class="rec" id="rec2">
-      <h2>Adotar hábitos alimentares saudáveis</h2>
-      <p>
-        Reduza a ingestão de alimentos processados, açúcares e gorduras saturadas.
-      </p>
-    </div>
-
-    <div class="rec" id="rec3">
-      <h2>Adotar hábitos alimentares saudáveis</h2>
-      <p>
-        Reduza a ingestão de alimentos processados, açúcares e gorduras saturadas.
-      </p>
-    </div>
-
-
-  </section>
 
 
 
@@ -206,6 +156,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

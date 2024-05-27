@@ -35,10 +35,6 @@ body {
     position: relative;
 }
 
-nav > div > button > span {
-    filter: invert(1);
-}
-
 .oqueexercicio {
     width: 100%;
     padding: 30px 0;
@@ -205,6 +201,24 @@ Começo da calculadora de MT
     color: gray;
     font-size: 20px;
 }
+/* Para navegadores WebKit (Chrome, Safari, etc.) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.display input[type=number] {
+/* Para navegadores Firefox 
+ATENção
+sei que está com erro mas ignore pois é assim mesmo
+
+*/
+    -moz-appearance: textfield;
+
+}
+
 
 .display button{
     background-color: red;
@@ -334,6 +348,7 @@ Começo da calculadora de MT
 .rec{
     padding: 10px;
     text-align: left;
+    width: 40%;
 
 }
 .rec h2{
