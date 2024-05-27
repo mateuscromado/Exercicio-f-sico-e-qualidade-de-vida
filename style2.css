@@ -73,15 +73,80 @@ nav > div > button > span {
     filter: invert(1);
 }
 
-h1 {
+h1#principal {
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.442);
     margin: auto;
-    margin-top: 150px;
+    margin-top: 130px;
     display: block;
     width: 290px;
     font-size: 50px;
     padding: 12px;
     border-radius: 5px;
+    margin-bottom: 220px;
 }
+
+h1#principal > p#pprincipal {
+    font-size: 10px;
+}
+
+img#banner {
+    display: block;
+    margin: auto;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    filter: brightness(50%);
+}
+
+h2#dobanner {
+    text-align: center;
+    transform: translateY(-120px);
+    width: 340px;
+    display: block;
+    margin: auto;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+p#normal {
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: -40px;
+    margin-bottom: 60px;
+}
+
+img#banner2 {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+h2.titulo {
+    margin: auto;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    width: 90%;
+    text-decoration: underline rgb(209, 0, 0) 4px;
+
+}
+
+p.texto {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 60px;
+}
+
