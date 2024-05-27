@@ -39,8 +39,21 @@ nav > div > button > span {
     background-position: 0px 0px;
     background-size: 1200px;
     position: relative;
+    background-image: url(imagens/exercicio\ banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+       
+
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 27e3a84c6770d62ed49e7e639ebfa625a29b44ff
 .oqueexercicio {
     width: 100%;
     padding: 30px 0;
@@ -200,12 +213,12 @@ h1 {
 }
 
 @media (max-width:340px) {
-    .imcmt h1{
+    .imcmt h1 {
         width: 95%;
         font-size: 25px;
     }
 
-    .subtopico{
+    .subtopico {
         width: 85%;
     }
 }
@@ -220,17 +233,17 @@ Começo da calculadora de MT
 
 
 
-.display{
+.display {
     width: 40%;
-    box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 19px 15px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding: 40px;
     border-radius: 20px;
     margin: 100px auto;
     text-align: center;
-    
+
 }
 
-.display input{
+.display input {
     width: 40%;
     height: 40px;
     margin: 10px;
@@ -239,7 +252,8 @@ Começo da calculadora de MT
     padding: 0 20px;
     text-align: center;
 }
-.display input::placeholder{
+
+.display input::placeholder {
     text-align: center;
     color: gray;
     font-size: 20px;
@@ -263,8 +277,32 @@ sei que está com erro mas ignore pois é assim mesmo
 }
 
 
+<<<<<<< HEAD
 .display button{
     background-color: #D81616;
+=======
+/* Para navegadores WebKit (Chrome, Safari, etc.) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.display input[type=number] {
+    /* Para navegadores Firefox 
+ATENção
+sei que está com erro mas ignore pois é assim mesmo
+
+*/
+    -moz-appearance: textfield;
+
+}
+
+
+.display button {
+    background-color: red;
+>>>>>>> 27e3a84c6770d62ed49e7e639ebfa625a29b44ff
     color: #FFFFFF;
     width: 30%;
     height: 40px;
@@ -272,15 +310,19 @@ sei que está com erro mas ignore pois é assim mesmo
     border-radius: 100px;
     border: none;
     font-size: 25px;
-    
+
 
 }
 
+<<<<<<< HEAD
 section.display > h1 {
     margin-top: 30px;
 }
 
 .box-s{
+=======
+.box-s {
+>>>>>>> 27e3a84c6770d62ed49e7e639ebfa625a29b44ff
     width: 80%;
     display: flex;
     justify-content: center;
@@ -288,12 +330,17 @@ section.display > h1 {
     gap: 30px;
 }
 
+<<<<<<< HEAD
 button#start {
     margin-bottom: 30px;
 }
 
 .box-s h3{
     background-color: #D81616;
+=======
+.box-s h3 {
+    background-color: rgb(200, 0, 0);
+>>>>>>> 27e3a84c6770d62ed49e7e639ebfa625a29b44ff
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 20px;
@@ -301,39 +348,41 @@ button#start {
     font-weight: normal;
     border: #FFF 2px solid;
     transition: 0.3s;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.box-s h3:hover{
+.box-s h3:hover {
     background-color: #FFFFFF;
     border: red 2px solid;
-    color:black;
+    color: black;
 }
 
 
-@media (max-width:900px)  {
-    .display{
+@media (max-width:900px) {
+    .display {
         width: 90%;
 
     }
 }
 
 
-@media (max-width:600px)  {
+@media (max-width:600px) {
 
-    .display{
-        padding: 5px ;
+    .display {
+        padding: 5px;
     }
 
-    .display input, .display button{
+    .display input,
+    .display button {
         width: 80%;
     }
 
-    .box-s{
+    .box-s {
         gap: 0px;
         flex-direction: column;
     }
-    .box-s h3{
+
+    .box-s h3 {
         margin: 0;
     }
 
@@ -342,7 +391,7 @@ button#start {
 
 /*Começo do cóssigo referente ao resultado dos calculos*/
 
-.resultado{
+.resultado {
     width: 100%;
     text-align: center;
     color: black;
@@ -350,75 +399,127 @@ button#start {
 
 
 }
-.resultado > h1{
+
+.resultado>h1 {
     text-decoration: underline red 4px;
 }
-.resultado div{
+
+.resultado div {
     gap: 10px;
     margin: 30px auto;
 }
-.resultado  div h1{
+
+.resultado div h1 {
     margin: auto;
     font-size: 80px;
 }
-.resultado div h3{
+
+.resultado div h3 {
     font-size: 40px;
     font-weight: normal;
 }
-.resultado p{
+
+.resultado p {
     font-size: 20px;
     width: 40%;
     margin: 0 auto;
 }
 
 /**Fim da config dos resultados*/
+<<<<<<< HEAD
 h1#recomenda {
     text-decoration: none;
     background-color: #D81616;
     color: white;
     text-align: center;
     padding: 30px;
+=======
+.recomendacoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+
 }
 
-.rec{
+.titulo {
+    width: 100%;
+    background-color: red;
+    font-size: 40px;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 40px;
+
+>>>>>>> 27e3a84c6770d62ed49e7e639ebfa625a29b44ff
+}
+
+.titulo h1 {
+    font-weight: 200;
+}
+
+.rec {
     padding: 10px;
     text-align: left;
     width: 40%;
+<<<<<<< HEAD
     text-align: center;
     margin: auto;
     display: block;
+=======
+>>>>>>> 27e3a84c6770d62ed49e7e639ebfa625a29b44ff
 
 }
-.rec h2{
+
+.rec h2 {
     text-decoration: underline red 3px;
     margin-top: 30px;
     font-size: 25;
 
 }
 
+<<<<<<< HEAD
 .rec p{
     font-size: 20px;
     margin-top: 20px;
+=======
+.rec p {
+    font-size: 25px;
+>>>>>>> 27e3a84c6770d62ed49e7e639ebfa625a29b44ff
     color: black;
     text-align: justify;
 
 }
 
 @media (max-width:700px) {
-    .resultado p{
+    .resultado p {
         width: 80%;
-        
+
     }
-    .resultado >div  h1{
+
+    .resultado>div h1 {
         font-size: 60px;
     }
-    .resultado >div h3{
+
+    .resultado>div h3 {
         font-size: 30px;
     }
 
+<<<<<<< HEAD
 .rec{
 width:90%;
 
 }
 
 }
+=======
+    .rec {
+        width: 90%;
+
+    }
+
+}
+
+>>>>>>> 27e3a84c6770d62ed49e7e639ebfa625a29b44ff
