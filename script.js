@@ -81,18 +81,18 @@ var casificacao = [
 ]
 
 function adicionarSecao(){
-     
-
     var corpo = document.querySelector("body")
     corpo.innerHTML += `
     
-    <section class="resultado" id="result">
+    <section class="resultado">
     <h1>Metabolimo basal</h1>
 
     <div>
-      <h1 id="calorias">1968 cal</h1>
+      <h1>1968 cal</h1>
+      <h3>Superávit calórico</h3>
     </div>
-    <p>Com esse indicador de Metabolismo basal podemos ter noção se estamos mais propensos a engordar ou emagrecer</p>
+    <p>Você está em um processo de superávit calórico
+      onde você consome mais calorias do que você gasta.</p>
   </section>
 
   <section class="resultado">
@@ -194,7 +194,6 @@ start.addEventListener("click", function () {
         MT = peso.value * 24
         console.log(MT)
     }
-    document.getElementById("calorias").textContent = MT
     //zerando os valores dos campos
     sexoFem = "n"
     peso.value = ""
