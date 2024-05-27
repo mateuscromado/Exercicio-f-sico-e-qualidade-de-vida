@@ -8,7 +8,6 @@ body{
     margin: 0;
     padding: 0;
     height: 1200px;
-    font-family: 'Bebas Neue', Helvetica, sans-serif;
 
     /*Background do Inicio*/
 
@@ -17,7 +16,14 @@ body{
     background-position: 0px 0px;
     background-size: 900px;
 }
+body * h1 , body * h2{
+    font-family: "Montserrat", sans-serif !important;
 
+}
+body * p{
+    font-family: "Roboto", sans-serif;
+
+}
 /*Começo da configuração do bootstrap*/
 .bg-red{
     background-color: #D81616;
