@@ -25,14 +25,11 @@ body{
 }
 .navbar{
     padding: 0;
-    position: absolute;
-    top: 0;
-    width: 100vw;
 }
 
 .bg-red a{
     color: #FFFFFF !important;
-    font-size: 25px;
+    font-size: 18px;
 }
 /*Final da configuração do bootstrap*/
 
@@ -91,7 +88,7 @@ h1#principal {
 }
 
 h1#principal > p#pprincipal {
-    font-size: 15px;
+    font-size: 10px;
 }
 
 img#banner {
@@ -105,7 +102,7 @@ img#banner {
 
 h2#dobanner {
     text-align: center;
-    transform: translateY(-140px);
+    transform: translateY(-120px);
     width: 340px;
     display: block;
     margin: auto;
