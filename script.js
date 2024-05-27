@@ -81,7 +81,7 @@ var casificacao = [
 ]
 
 function adicionarSecao(){
-    var corpo = document.querySelector("body")
+    var corpo = document.querySelector(".conterResposta")
     corpo.innerHTML += `
     
     <section class="resultado">
@@ -89,7 +89,6 @@ function adicionarSecao(){
 
     <div>
       <h1>1968 cal</h1>
-      <h3>Superávit calórico</h3>
     </div>
     <p>Você está em um processo de superávit calórico
       onde você consome mais calorias do que você gasta.</p>
@@ -146,11 +145,28 @@ var start = document.getElementById("start")
 fem.addEventListener("click", function () {
     sexoFem = true
     console.log(sexoFem)
+    fem.style.backgroundColor = "#FFF"
+    fem.style.color = "#000"
+    fem.style.border = "red 2px solid"
+
+    mas.style.backgroundColor = "red"
+    mas.style.color = "#FFF"
+    mas.style.border = "none"
+
+
 });
 
 mas.addEventListener("click", function () {
     sexoFem = false
     console.log(sexoFem)
+
+    mas.style.backgroundColor = "#FFF"
+    mas.style.color = "#000"
+    mas.style.border = "red 2px solid"
+
+    fem.style.backgroundColor = "red"
+    fem.style.color = "#FFF"
+    fem.style.border = "none"
 })
 
 console.log(sexoFem)
