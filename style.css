@@ -7,7 +7,7 @@ body {
 
 /*Começo da configuração do bootstrap*/
 .bg-red {
-    background-color: #D81616 !important;
+    background-color: #313A7B !important;
 
 }
 
@@ -86,7 +86,7 @@ h1.h1grande {
 
 h2.h2g {
     margin-top: 10px;
-    text-decoration: underline rgb(209, 0, 0) 4px;
+    text-decoration: underline #313A7B 4px;
     font-size: 30px;
     text-align: center;
 }
@@ -106,14 +106,14 @@ h2.h2g {
 
 h1.htn {
     margin-top: 60px;
-    text-decoration: underline rgb(209, 0, 0) 4px;
+    text-decoration: underline #313A7B 4px;
     font-size: 30px;
     text-align: center;
 }
 
 h3.htn3 {
     margin-top: 20px;
-    text-decoration: underline rgb(209, 0, 0) 4px;
+    text-decoration: underline #313A7B 4px;
 }
 
 
@@ -164,13 +164,13 @@ h3.htn3 {
     text-align: left;
     width: 90%;
     margin: 40px auto;
-    text-decoration: underline rgb(209, 0, 0) 4px;
+    text-decoration: underline #313A7B 4px;
     font-weight: normal;
 
 }
 
 h1 {
-    text-decoration: underline rgb(209, 0, 0) 4px;
+    text-decoration: underline #313A7B 4px;
     margin-top: 60px;
 }
 
@@ -272,7 +272,7 @@ sei que está com erro mas ignore pois é assim mesmo
 
 
 .display button{
-    background-color: #D81616;
+    background-color: #313A7B;
     color: #FFFFFF;
     width: 30%;
     height: 40px;
@@ -301,7 +301,7 @@ button#start {
 }
 
 .box-s h3{
-    background-color: #D81616;
+    background-color: #313A7B;
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 20px;
@@ -314,7 +314,7 @@ button#start {
 
 .box-s h3:hover {
     background-color: #FFFFFF;
-    border: red 2px solid;
+    border: #313A7B 2px solid;
     color: black;
 }
 
@@ -362,7 +362,7 @@ button#start {
 }
 
 .resultado>h1 {
-    text-decoration: underline red 4px;
+    text-decoration: underline #313A7B 4px;
 }
 
 .resultado div {
@@ -389,7 +389,7 @@ button#start {
 /**Fim da config dos resultados*/
 h1#recomenda {
     text-decoration: none;
-    background-color: #D81616;
+    background-color: #313A7B;
     color: white;
     text-align: center;
     padding: 30px;
@@ -410,7 +410,7 @@ h1#recomenda {
 }
 
 .rec h2 {
-    text-decoration: underline red 3px;
+    text-decoration: underline #313A7B 3px;
     margin-top: 30px;
     font-size: 25;
 
