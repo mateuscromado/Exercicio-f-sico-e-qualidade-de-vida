@@ -35,6 +35,10 @@ body {
     position: relative;
 }
 
+nav > div > button > span {
+    filter: invert(1);
+}
+
 .oqueexercicio {
     width: 100%;
     padding: 30px 0;
