@@ -1,15 +1,18 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+    font-weight: normal;
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*Começo da configuração do bootstrap*/
 .bg-red {
-    background-color: red !important;
+    background-color: #D81616 !important;
 
+}
+
+nav > div > button > span {
+    filter: invert(1);
 }
 
 .navbar {
@@ -30,13 +33,12 @@ body {
 
 .banner {
     width: 100%;
-    height: 80vh;
-    background-color: black;
+    height: 900px;
+    background-image: url('imagens/corrida.jpg');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 1200px;
     position: relative;
-}
-
-nav > div > button > span {
-    filter: invert(1);
 }
 
 .oqueexercicio {
@@ -47,6 +49,7 @@ nav > div > button > span {
     justify-content: center;
     gap: 20px;
     min-height: 65vh;
+    margin-bottom: 60px;
 
 }
 
@@ -57,7 +60,7 @@ nav > div > button > span {
 
 .oqueexercicio img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .exercicio {
@@ -66,6 +69,19 @@ nav > div > button > span {
     align-items: top;
     height: 60%;
     padding: 30px;
+}
+
+h1.h1grande {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2.h2g {
+    margin-top: 10px;
+    text-decoration: underline rgb(209, 0, 0) 4px;
+    font-size: 30px;
+    text-align: center;
 }
 
 
@@ -77,7 +93,20 @@ nav > div > button > span {
 
     .oqueexercicio img {
         border-radius: 0 10px 10px 0;
+        margin-top: 60px;
     }
+}
+
+h1.htn {
+    margin-top: 60px;
+    text-decoration: underline rgb(209, 0, 0) 4px;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3.htn3 {
+    margin-top: 20px;
+    text-decoration: underline rgb(209, 0, 0) 4px;
 }
 
 
@@ -102,6 +131,11 @@ nav > div > button > span {
 
     .exercicio p {
         text-align: justify;
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 10px;
     }
 
 }
@@ -119,12 +153,18 @@ nav > div > button > span {
 }
 
 .imcmt h1 {
-    font-size: 36px;
+    font-size: 30px;
     text-align: left;
-    width: 60%;
+    width: 90%;
     margin: 40px auto;
     text-decoration: underline rgb(209, 0, 0) 4px;
+    font-weight: normal;
 
+}
+
+h1 {
+    text-decoration: underline rgb(209, 0, 0) 4px;
+    margin-top: 60px;
 }
 
 .subtopico {
@@ -132,15 +172,14 @@ nav > div > button > span {
 }
 
 .subtopico p {
-    font-family: "Roboto", sans-serif;
     text-align: justify;
     font-size: 20px;
 }
 
 .subtopico h3,
 .imcmt h1 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    font-weight: normal;
+    text-align: center;
 
 }
 
@@ -185,7 +224,7 @@ Começo da calculadora de MT
     width: 40%;
     box-shadow: 0px 0px 19px 15px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
     padding: 40px;
-    border-radius: 20;
+    border-radius: 20px;
     margin: 100px auto;
     text-align: center;
     
@@ -205,9 +244,27 @@ Começo da calculadora de MT
     color: gray;
     font-size: 20px;
 }
+/* Para navegadores WebKit (Chrome, Safari, etc.) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.display input[type=number] {
+/* Para navegadores Firefox 
+ATENção
+sei que está com erro mas ignore pois é assim mesmo
+
+*/
+    -moz-appearance: textfield;
+
+}
+
 
 .display button{
-    background-color: red;
+    background-color: #D81616;
     color: #FFFFFF;
     width: 30%;
     height: 40px;
@@ -219,6 +276,10 @@ Começo da calculadora de MT
 
 }
 
+section.display > h1 {
+    margin-top: 30px;
+}
+
 .box-s{
     width: 80%;
     display: flex;
@@ -227,13 +288,17 @@ Começo da calculadora de MT
     gap: 30px;
 }
 
+button#start {
+    margin-bottom: 30px;
+}
+
 .box-s h3{
-    background-color: rgb(200, 0, 0);
+    background-color: #D81616;
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: normal;
     border: #FFF 2px solid;
     transition: 0.3s;
     cursor:pointer;
@@ -298,7 +363,7 @@ Começo da calculadora de MT
 }
 .resultado div h3{
     font-size: 40px;
-    font-weight: 400;
+    font-weight: normal;
 }
 .resultado p{
     font-size: 20px;
@@ -307,41 +372,33 @@ Começo da calculadora de MT
 }
 
 /**Fim da config dos resultados*/
-.recomendacoes{
-    width: 100%;
-    display: flex ;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    gap: 50px;
-
-}
-
-.titulo{
-    width: 100%;
-    background-color: red;
-    font-size: 40px;
-    color: #FFF;
+h1#recomenda {
+    text-decoration: none;
+    background-color: #D81616;
+    color: white;
     text-align: center;
-    margin-bottom: 40px;
- 
-}
-.titulo h1{
-    font-weight: 200;   
+    padding: 30px;
 }
 
 .rec{
     padding: 10px;
     text-align: left;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    display: block;
 
 }
 .rec h2{
     text-decoration: underline red 3px;
+    margin-top: 30px;
+    font-size: 25;
+
 }
 
 .rec p{
-    font-size: 25px;
+    font-size: 20px;
+    margin-top: 20px;
     color: black;
     text-align: justify;
 
@@ -358,4 +415,10 @@ Começo da calculadora de MT
     .resultado >div h3{
         font-size: 30px;
     }
+
+.rec{
+width:90%;
+
+}
+
 }
