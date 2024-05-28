@@ -20,7 +20,7 @@ body{
 
 /*Começo da configuração do bootstrap*/
 .bg-red{
-    background-color:#1c2a95 ;
+    background-color: #313A7B;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.496);
 }
 .navbar{
@@ -29,7 +29,7 @@ body{
 
 .bg-red a{
     color: #FFFFFF !important;
-    font-size: 18px;
+    font-size: 25px;
 }
 /*Final da configuração do bootstrap*/
 
@@ -137,8 +137,7 @@ h2.titulo {
     font-size: 30px;
     text-align: center;
     width: 90%;
-    background-color:#1c2a95 ;
-    text-decoration: underline  4px;
+    text-decoration: underline #313A7B 4px;
 
 }
 
