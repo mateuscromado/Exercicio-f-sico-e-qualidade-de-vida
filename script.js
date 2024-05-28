@@ -81,7 +81,7 @@ var casificacao = [
 ]
 
 function adicionarSecao(){
-    var corpo = document.querySelector(".conterResposta")
+    var corpo = document.querySelector("body")
     corpo.innerHTML += `
     
     <section class="resultado">
@@ -107,7 +107,7 @@ function adicionarSecao(){
 
   <section class="recomendacoes">
     <div class="titulo">
-      <h1>RECOMENDAÇÕES</h1>
+      <h1 >RECOMENDAÇÕES</h1>
     </div>
 
     <div class="rec" id="rec1">
@@ -147,9 +147,9 @@ fem.addEventListener("click", function () {
     console.log(sexoFem)
     fem.style.backgroundColor = "#FFF"
     fem.style.color = "#000"
-    fem.style.border = "red 2px solid"
+    fem.style.border = "#313A7B 2px solid"
 
-    mas.style.backgroundColor = "red"
+    mas.style.backgroundColor = "#313A7B"
     mas.style.color = "#FFF"
     mas.style.border = "none"
 
@@ -162,9 +162,9 @@ mas.addEventListener("click", function () {
 
     mas.style.backgroundColor = "#FFF"
     mas.style.color = "#000"
-    mas.style.border = "red 2px solid"
+    mas.style.border = "#313A7B 2px solid"
 
-    fem.style.backgroundColor = "red"
+    fem.style.backgroundColor = "#313A7B"
     fem.style.color = "#FFF"
     fem.style.border = "none"
 })

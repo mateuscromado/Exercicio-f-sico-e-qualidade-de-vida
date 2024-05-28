@@ -16,12 +16,15 @@ nav > div > button > span {
 }
 
 .navbar {
+
     padding: 0;
     position: absolute;
     width: 100%;
     z-index: 2;
 }
-
+.navbar img{
+    filter: invert();
+}
 .bg-red a {
     color: #FFFFFF !important;
     font-size: 25px;
@@ -46,6 +49,66 @@ nav > div > button > span {
 
        
 
+}
+
+.banner div{
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #b3b3b3;
+   
+
+    
+}
+
+.banner div h1{
+     color: #ffffff;
+    font-size: 80px;
+    text-align: center;
+    width: 50%;
+}
+.banner div p{
+    font-size: 30px;
+    width: 55%;
+    text-align: center;
+}
+
+.banner button{
+    color:#FFF;
+    background-color: #1c2a95;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+
+
+}
+
+@media (max-width:1000px) {
+    .banner div h1,.banner div p{
+        width: 80%;
+        
+    } 
+}
+
+@media (max-width:600px) {
+    .banner div h1{
+width: 90%;
+font-size: 50px;
+    }
+    .banner div p{
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .banner div button{
+        font-size: 20px;
+    }
 }
 
 .oqueexercicio {
@@ -397,6 +460,9 @@ h1#recomenda {
 
 .titulo h1 {
     font-weight: 200;
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline 4px #313A7B;
 }
 
 .rec {
