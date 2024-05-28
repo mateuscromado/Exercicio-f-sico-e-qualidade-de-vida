@@ -1,21 +1,75 @@
 @charset "UTF-8";
 
-@media (max-width:1300px) and (min-width:1000px) {
-    .oqueexercicio >div{
-        width: 60%;
-    
-    }
-    .oqueexercicio img{
-        border-radius: 0 10px 10px 0;
-    }
-}
-@media (max-width:1000px) {
-    .oqueexercicio{
-        display: block;
+@media screen and (min-width:992px) {
 
+    body {
+        background-image: url('imagens/corrida.jpg');
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        background-size: 100% 700px;
     }
-    .oqueexercicio > div{
-        margin: 0 auto;
-        width: 80%;
+
+    h1#principal > p#pprincipal {
+        font-size: 20px;
     }
+
+    h1#principal {
+        width: 490px;
+        font-size: 50px;
+        padding: 20px 15px;
+    }
+
+    p#normal {
+        width: 55%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    p.texto {
+        width: 55%;
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    img#banner {
+        width: 700px;
+        transform: translateY(100px);
+    }
+
+    h2#dobanner {
+        font-size: 50px;
+        transform: translateY(-150px);
+        width: 400px;
+    }
+
+    p#normal {
+        text-align: center;
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
+    h2.titulo {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    img#banner2 {
+        width: 700px;
+        margin: auto;
+        display: block;
+    }
+
+    h2#dobanner2 {
+        font-size: 40px;
+    }
+
+    p.textou {
+        width: 55%;
+        text-align: left;
+    }
+
 }

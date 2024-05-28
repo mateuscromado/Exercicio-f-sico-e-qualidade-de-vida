@@ -27,6 +27,10 @@ body{
     padding: 0;
 }
 
+.navbar img{
+    filter: invert();
+}
+
 .bg-red a{
     color: #FFFFFF !important;
     font-size: 25px;
