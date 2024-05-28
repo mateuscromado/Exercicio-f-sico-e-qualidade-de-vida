@@ -1,18 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Bebas Neue', Helvetica, sans-serif;
-    font-weight: normal;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*Começo da configuração do bootstrap*/
 .bg-red {
-    background-color: #313A7B !important;
+    background-color: #1c2a95 !important;
 
-}
-
-nav > div > button > span {
-    filter: invert(1);
 }
 
 .navbar {
@@ -33,20 +30,94 @@ nav > div > button > span {
 
 .banner {
     width: 100%;
-    height: 900px;
-    background-image: url('imagens/corrida.jpg');
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    background-size: 1200px;
+    height: 80vh;
+    background-color: black;
     position: relative;
     background-image: url(imagens/exercicio\ banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
        
 
 }
+.navbar-brand{
+    background-color: #1c2a95;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 25px;
+}
+.navbar-brand img{
+    scale: 2;
+    filter:invert();
+    margin: auto 20px;
+}
+
+.banner div{
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #b3b3b3;
+   
+
+    
+}
+
+.banner div h1{
+     color: #ffffff;
+    font-size: 80px;
+    text-align: center;
+    width: 50%;
+}
+.banner div p{
+    font-size: 30px;
+    width: 55%;
+    text-align: center;
+}
+
+.banner button{
+    color:#FFF;
+    background-color: #1c2a95;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+
+
+}
+
+@media (max-width:1000px) {
+    .banner div h1,.banner div p{
+        width: 80%;
+        
+    } 
+}
+
+@media (max-width:600px) {
+    .banner div h1{
+width: 90%;
+font-size: 50px;
+    }
+    .banner div p{
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .banner div button{
+        font-size: 20px;
+    }
+}
+
 
 .oqueexercicio {
     width: 100%;
@@ -56,7 +127,6 @@ nav > div > button > span {
     justify-content: center;
     gap: 20px;
     min-height: 65vh;
-    margin-bottom: 60px;
 
 }
 
@@ -67,7 +137,7 @@ nav > div > button > span {
 
 .oqueexercicio img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .exercicio {
@@ -76,19 +146,6 @@ nav > div > button > span {
     align-items: top;
     height: 60%;
     padding: 30px;
-}
-
-h1.h1grande {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-h2.h2g {
-    margin-top: 10px;
-    text-decoration: underline #313A7B 4px;
-    font-size: 30px;
-    text-align: center;
 }
 
 
@@ -100,20 +157,7 @@ h2.h2g {
 
     .oqueexercicio img {
         border-radius: 0 10px 10px 0;
-        margin-top: 60px;
     }
-}
-
-h1.htn {
-    margin-top: 60px;
-    text-decoration: underline #313A7B 4px;
-    font-size: 30px;
-    text-align: center;
-}
-
-h3.htn3 {
-    margin-top: 20px;
-    text-decoration: underline #313A7B 4px;
 }
 
 
@@ -138,11 +182,6 @@ h3.htn3 {
 
     .exercicio p {
         text-align: justify;
-        margin-top: 10px;
-    }
-
-    p {
-        margin-top: 10px;
     }
 
 }
@@ -160,18 +199,12 @@ h3.htn3 {
 }
 
 .imcmt h1 {
-    font-size: 30px;
+    font-size: 36px;
     text-align: left;
-    width: 90%;
+    width: 60%;
     margin: 40px auto;
-    text-decoration: underline #313A7B 4px;
-    font-weight: normal;
+    text-decoration: underline #1c2a95 4px;
 
-}
-
-h1 {
-    text-decoration: underline #313A7B 4px;
-    margin-top: 60px;
 }
 
 .subtopico {
@@ -179,14 +212,15 @@ h1 {
 }
 
 .subtopico p {
+    font-family: "Roboto", sans-serif;
     text-align: justify;
     font-size: 20px;
 }
 
 .subtopico h3,
 .imcmt h1 {
-    font-weight: normal;
-    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
 
 }
 
@@ -231,7 +265,7 @@ Começo da calculadora de MT
     width: 40%;
     box-shadow: 0px 0px 19px 15px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 20;
     margin: 100px auto;
     text-align: center;
 
@@ -252,6 +286,7 @@ Começo da calculadora de MT
     color: gray;
     font-size: 20px;
 }
+
 /* Para navegadores WebKit (Chrome, Safari, etc.) */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
@@ -261,7 +296,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 
 .display input[type=number] {
-/* Para navegadores Firefox 
+    /* Para navegadores Firefox 
 ATENção
 sei que está com erro mas ignore pois é assim mesmo
 
@@ -271,8 +306,8 @@ sei que está com erro mas ignore pois é assim mesmo
 }
 
 
-.display button{
-    background-color: #313A7B;
+.display button {
+    background-color: #1c2a95;
     color: #FFFFFF;
     width: 30%;
     height: 40px;
@@ -284,11 +319,7 @@ sei que está com erro mas ignore pois é assim mesmo
 
 }
 
-section.display > h1 {
-    margin-top: 30px;
-}
-
-.box-s{
+.box-s {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -296,17 +327,13 @@ section.display > h1 {
     gap: 30px;
 }
 
-button#start {
-    margin-bottom: 30px;
-}
-
-.box-s h3{
-    background-color: #313A7B;
+.box-s h3 {
+    background-color: #1c2a95;
     color: #FFFFFF;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 400;
     border: #FFF 2px solid;
     transition: 0.3s;
     cursor: pointer;
@@ -314,7 +341,7 @@ button#start {
 
 .box-s h3:hover {
     background-color: #FFFFFF;
-    border: #313A7B 2px solid;
+    border: #1c2a95 2px solid;
     color: black;
 }
 
@@ -362,7 +389,7 @@ button#start {
 }
 
 .resultado>h1 {
-    text-decoration: underline #313A7B 4px;
+    text-decoration: underline #1c2a95 4px;
 }
 
 .resultado div {
@@ -377,7 +404,7 @@ button#start {
 
 .resultado div h3 {
     font-size: 40px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .resultado p {
@@ -387,12 +414,25 @@ button#start {
 }
 
 /**Fim da config dos resultados*/
-h1#recomenda {
-    text-decoration: none;
-    background-color: #313A7B;
-    color: white;
+.recomendacoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+
+}
+
+.titulo {
+    width: 100%;
+    background-color: #1c2a95;
+    font-size: 40px;
+    color: #FFF;
     text-align: center;
-    padding: 30px;
+    margin-bottom: 40px;
+
 }
 
 .titulo h1 {
@@ -403,22 +443,15 @@ h1#recomenda {
     padding: 10px;
     text-align: left;
     width: 40%;
-    text-align: center;
-    margin: auto;
-    display: block;
 
 }
 
 .rec h2 {
-    text-decoration: underline #313A7B 3px;
-    margin-top: 30px;
-    font-size: 25;
-
+    text-decoration: underline #1c2a95 3px;
 }
 
-.rec p{
-    font-size: 20px;
-    margin-top: 20px;
+.rec p {
+    font-size: 25px;
     color: black;
     text-align: justify;
 
@@ -438,9 +471,10 @@ h1#recomenda {
         font-size: 30px;
     }
 
-.rec{
-width:90%;
+    .rec {
+        width: 90%;
+
+    }
 
 }
 
-}

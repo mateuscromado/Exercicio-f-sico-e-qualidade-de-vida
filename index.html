@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -9,10 +9,12 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Fontes -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!--Importando as fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
 
 </head>
@@ -22,22 +24,29 @@
 
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   
+      
+    
     <div class="container-fluid bg-red">
+      
+      <a class="navbar-brand" href="#">
+        <img src="imagens/logo header.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        MetaPro
+      </a>
       <!--  <a class="navbar-brand" href="#">Navbar</a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: center;">
+      <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: right;">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="exercicio.html  ">Exercício</a>
+            <a class="nav-link active" aria-current="page" href="exercicio.html">Exercício</a>
           </li>
-          </li>
-         
+
         </ul>
       </div>
     </div>
@@ -45,10 +54,15 @@
 
   <section class="banner">
     <div>
-     
+      <h1>Exercício Físico & Qualidade de Vida</h1>
+      <p>Nesse pequeno blog veremos o que é o exercício físico, seus benefícios, práticas classificações ETC, um blog
+        completo para você! </p>
+      <a href="exercicio.html">
+        <button>CONTEÚDO COMPLETO</button>
+      </a>
     </div>
 
-  
+
   </section>
 
   <section class="oqueexercicio">
@@ -58,22 +72,25 @@
 
     <div class="exercicio">
 
-      <h1 class="h1grande">O que é o exercício físico?</h1>
+      <h1>O que é o exercício físico ?</h1>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti enim recusandae suscipit, odit sed
-        veritatis praesentium illo provident quod adipisci incidunt, non nemo alias ad labore quis modi inventore
-        delectus accusamus. Voluptate fuga deserunt necessitatibus quod. Officia, quo saepe enim at repellendus fugit
-        optio tempora eligendi quas et. Quidem.
+        É um comportamento que envolve os movimentos do corpo, executados de forma intencional. Dessa maneira, os
+        movimentos involuntários, como respirar e fazer o coração bater, não são considerados.
+
+        Além disso, a atividade física também envolve uma relação com a sociedade e com o ambiente em que a pessoa está
+        inserida. Isso significa que: sua atividade pode estar presente no lazer, nas tarefas domésticas ou no
+        deslocamento para a escola ou o trabalho. Por estar presente de forma mais ampla no cotidiano, ela pode ser
+        recomendada por qualquer profissional da saúde.
       </p>
     </div>
   </section>
 
   <section class="imcmt">
-    <h1 class="h1grande">METABOLISMO BASAL E ÍNDICE DE MASSA CORPORAL</h1>
+    <h1>METABOLISMO BASAL E ÍNDICE DE MASSA CORPORAL</h1>
 
     <div class="subtopico">
-      <h2 class="h2g">Metabolimo basal (MT)</h2>
+      <h3>Metabolimo basal (MT)</h3>
 
       <p>
         Metabolismo basal é a quantidade mínima de energia que o corpo necessita para realizar suas funções vitais em
@@ -87,7 +104,7 @@
 
 
     <div class="subtopico">
-      <h2 class="h2g">Índice de Massa Corporal (IMC)</h2>
+      <h3>Índice de Massa Corporal (IMC)</h3>
 
       <p>
         O Índice de Massa Corporal (IMC) é uma medida usada para avaliar se uma pessoa tem um peso saudável em relação à
@@ -101,14 +118,14 @@
 
 
   <section class="display">
-    <h1>Calculadora MT / IMC</h1>
+    <h1>Calcular MT e IMC</h1>
 
     <input type="number" id="altura" name="" placeholder="Altura" title="Insira sua altura" id="pesoInput">
     <br>
     <input type="number" id="peso" name="" placeholder="Peso" title="Insira seu peso" id="alturaInput">
     <br>
     <br>
-    <h2>Selecione seu sexo</h2>
+    <h2>Sexo</h2>
 
     <div class="box-s">
 
@@ -125,57 +142,9 @@
 
   </section>
 
-  <section class="resultado">
-    <h1>Metabolimo basal</h1>
+  <div class="conterResposta">
 
-    <div>
-      <h1>1968 cal</h1>
-      <h3>Superávit calórico</h3>
-    </div>
-    <p>Você está em um processo de superávit calórico
-      onde você consome mais calorias do que você gasta.</p>
-  </section>
-
-  <section class="resultado">
-    <h1>Índice de Massa Corporal </h1>
-
-    <div>
-      <h1>27,6</h1>
-      <h3>Sobrepeso</h3>
-    </div>
-    <p>Pode estar associado a um maior risco de desenvolver doenças como diabetes tipo 2, hipertensão e doenças
-      cardíacas.</p>
-  </section>
-
-      <h1 id="recomenda">RECOMENDAÇÕES</h1>
-
-    <div class="rec" id="rec1">
-      <h2>Adotar hábitos alimentares saudáveis</h2>
-      <p>
-        Reduza a ingestão de alimentos processados, açúcares e gorduras saturadas.
-      </p>
-    </div>
-
-    <div class="rec" id="rec2">
-      <h2>Adotar hábitos alimentares saudáveis</h2>
-      <p>
-        Reduza a ingestão de alimentos processados, açúcares e gorduras saturadas.
-      </p>
-    </div>
-
-    <div class="rec" id="rec3">
-      <h2>Adotar hábitos alimentares saudáveis</h2>
-      <p>
-        Reduza a ingestão de alimentos processados, açúcares e gorduras saturadas.
-      </p>
-    </div>
-
-
-  </section>
-
-<div class="conterResposta">
-
-</div>
+  </div>
 
 
 
@@ -202,7 +171,7 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
